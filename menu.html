@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our menu of authentic Indian sweets, veg dishes, non-veg specialties, and snacks. Fresh, delicious, and made with traditional recipes.">
+    <title>Menu - DRS Sweets & Restaurant</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                DRS Sweets
+                <span>Since 1985</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1600&q=80" alt="Restaurant food spread" class="hero-bg">
+        <div class="hero-content">
+            <h1>Our Menu</h1>
+            <p class="subtitle">Authentic Flavors, Traditional Recipes</p>
+            <p>Discover our wide selection of traditional Indian sweets and dishes</p>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section>
+        <div class="container">
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All Items</button>
+                <button class="category-btn" data-category="sweets">Sweets</button>
+                <button class="category-btn" data-category="veg">Veg Dishes</button>
+                <button class="category-btn" data-category="nonveg">Non-Veg</button>
+                <button class="category-btn" data-category="snacks">Snacks</button>
+            </div>
+
+            <!-- SWEETS SECTION -->
+            <div class="menu-grid">
+                <div class="menu-item show" data-category="sweets">
+                    <img src="https://images.unsplash.com/photo-1618164436241-4473940d1f5c?w=400&q=80" alt="Gulab Jamun" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Gulab Jamun</h3>
+                        <p class="description">Soft, spongy milk-solid balls soaked in aromatic sugar syrup. A classic Indian dessert loved by all.</p>
+                        <div class="price">₹40/pc</div>
+                    </div>
+                </div>
+
+                <div class="menu-item show" data-category="sweets">
+                    <img src="https://images.unsplash.com/photo-1576506295286-5cda18df43e7?w=400&q=80" alt="Rasgulla" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Rasgulla</h3>
+                        <p class="description">Light, spongy cottage cheese balls dunked in sugar syrup. Fresh, delicate, and absolutely delightful.</p>
+                        <div class="price">₹350/kg</div>
+                    </div>
+                </div>
+
+                <div class="menu-item show" data-category="sweets">
+                    <img src="https://images.unsplash.com/photo-1599009434297-e7a4f9d252f0?w=400&q=80" alt="Jalebi" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Jalebi</h3>
+                        <p class="description">Crispy, golden spirals soaked in sweet syrup. Best enjoyed fresh and warm, a festival favorite.</p>
+                        <div class="price">₹180/kg</div>
+                    </div>
+                </div>
+
+                <div class="menu-item show" data-category="sweets">
+                    <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&q=80" alt="Kaju Barfi" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Kaju Barfi</h3>
+                        <p class="description">Premium cashew fudge, smooth and rich. Made with pure cashews and love, perfect for special occasions.</p>
+                        <div class="price">₹650/kg</div>
+                    </div>
+                </div>
+
+                <div class="menu-item show" data-category="sweets">
+                    <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80" alt="Motichoor Ladoo" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Motichoor Ladoo</h3>
+                        <p class="description">Delicate pearl-shaped sweet balls made from gram flour. Melt-in-mouth texture, traditionally auspicious.</p>
+                        <div class="price">₹450/kg</div>
+                    </div>
+                </div>
+
+                <!-- VEG DISHES SECTION -->
+                <div class="menu-item show" data-category="veg">
+                    <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&q=80" alt="Butter Paneer" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Butter Paneer</h3>
+                        <p class="description">Soft paneer cubes in rich, creamy tomato-based gravy. Our signature dish loved by vegetarians.</p>
+                        <div class="price">₹180</div>
+                    </div>
+                </div>
+
+                <div class="menu-item show" data-category="veg">
+                    <img src="https://images.unsplash.com/photo-1645177628172-a94c30a5f3aa?w=400&q=80" alt="Palak Paneer" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Palak Paneer</h3>
+                        <p class="description">Cottage cheese in smooth spinach gravy, flavored with Indian spices. Healthy and delicious.</p>
+                        <div class="price">₹160</div>
+                    </div>
+                </div>
+
+                <div class="menu-item show" data-category="veg">
+                    <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=400&q=80" alt="Malai Kofta" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Malai Kofta</h3>
+                        <p class="description">Fried vegetable and paneer balls in creamy cashew gravy. Rich, indulgent, and absolutely royal.</p>
+                        <div class="price">₹170</div>
+                    </div>
+                </div>
+
+                <div class="menu-item show" data-category="veg">
+                    <img src="https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=400&q=80" alt="Dal Makhni" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Dal Makhni</h3>
+                        <p class="description">Black lentils slow-cooked with butter and cream. Comfort food at its finest, rich and velvety.</p>
+                        <div class="price">₹120</div>
+                    </div>
+                </div>
+
+                <div class="menu-item show" data-category="veg">
+                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&q=80" alt="Mix Veg" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Mix Veg</h3>
+                        <p class="description">Assorted fresh vegetables cooked in aromatic spices. Colorful, nutritious, and full of flavor.</p>
+                        <div class="price">₹140</div>
+                    </div>
+                </div>
+
+                <!-- NON-VEG DISHES SECTION -->
+                <div class="menu-item show" data-category="nonveg">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&q=80" alt="Butter Chicken" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Butter Chicken</h3>
+                        <p class="description">Tender chicken pieces in rich, creamy tomato gravy. The most popular Indian dish worldwide.</p>
+                        <div class="price">₹220</div>
+                    </div>
+                </div>
+
+                <div class="menu-item show" data-category="nonveg">
+                    <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&q=80" alt="Tandoori Chicken" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Tandoori Chicken</h3>
+                        <p class="description">Marinated chicken roasted to perfection in traditional tandoor. Smoky, spicy, and succulent.</p>
+                        <div class="price">₹250</div>
+                    </div>
+                </div>
+
+                <div class="menu-item show" data-category="nonveg">
+                    <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=400&q=80" alt="Fried Chicken" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Fried Chicken</h3>
+                        <p class="description">Crispy, golden chicken pieces marinated with Indian spices. Crunchy outside, juicy inside.</p>
+                        <div class="price">₹180</div>
+                    </div>
+                </div>
+
+                <div class="menu-item show" data-category="nonveg">
+                    <img src="https://images.unsplash.com/photo-1580959375944-1397b8e50c11?w=400&q=80" alt="Fish Fry" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Fish Fry</h3>
+                        <p class="description">Fresh fish marinated in spices and deep-fried to golden perfection. Crispy and flavorful.</p>
+                        <div class="price">₹200</div>
+                    </div>
+                </div>
+
+                <!-- SNACKS SECTION -->
+                <div class="menu-item show" data-category="snacks">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&q=80" alt="Samosa" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Samosa</h3>
+                        <p class="description">Crispy triangular pastry filled with spiced potatoes and peas. India's favorite street snack.</p>
+                        <div class="price">₹20/pc</div>
+                    </div>
+                </div>
+
+                <div class="menu-item show" data-category="snacks">
+                    <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&q=80" alt="Grilled Sandwich" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Grilled Sandwich</h3>
+                        <p class="description">Toasted sandwich with vegetables, cheese, and Indian spices. Perfect quick bite.</p>
+                        <div class="price">₹80</div>
+                    </div>
+                </div>
+
+                <div class="menu-item show" data-category="snacks">
+                    <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=400&q=80" alt="Pakora" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Pakora</h3>
+                        <p class="description">Mixed vegetable fritters in spiced gram flour batter. Perfect with chai on rainy days.</p>
+                        <div class="price">₹60</div>
+                    </div>
+                </div>
+
+                <!-- Additional items to make 20 total -->
+                <div class="menu-item show" data-category="veg">
+                    <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&q=80" alt="Shahi Paneer" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Shahi Paneer</h3>
+                        <p class="description">Royal paneer curry in cashew and cream-based gravy. Fit for royalty, loved by all.</p>
+                        <div class="price">₹190</div>
+                    </div>
+                </div>
+
+                <div class="menu-item show" data-category="nonveg">
+                    <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&q=80" alt="Chicken Tikka" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Chicken Tikka</h3>
+                        <p class="description">Boneless chicken marinated in yogurt and spices, grilled to perfection. Smoky and tender.</p>
+                        <div class="price">₹240</div>
+                    </div>
+                </div>
+
+                <div class="menu-item show" data-category="snacks">
+                    <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=400&q=80" alt="Aloo Tikki" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Aloo Tikki</h3>
+                        <p class="description">Spiced potato patties, crispy outside and soft inside. Served with chutneys.</p>
+                        <div class="price">₹30</div>
+                    </div>
+                </div>
+
+                <div class="menu-item show" data-category="sweets">
+                    <img src="https://images.unsplash.com/photo-1618164436241-4473940d1f5c?w=400&q=80" alt="Ras Malai" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Ras Malai</h3>
+                        <p class="description">Soft paneer patties soaked in sweetened, thickened milk. Delicate and heavenly.</p>
+                        <div class="price">₹400/kg</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section style="background: linear-gradient(135deg, var(--primary-maroon) 0%, #5a0000 100%); color: white; text-align: center; padding: 4rem 2rem;">
+        <div class="container">
+            <h2 style="color: white; margin-bottom: 1rem;">Ready to Order?</h2>
+            <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.2rem; margin-bottom: 2rem;">Visit us or place your order via WhatsApp</p>
+            <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DRS Sweets</h3>
+                    <p>Serving authentic Indian sweets and cuisine since 1985. A tradition of taste and quality.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Near Rangpuri Chowk, Jalandhar, Punjab</p>
+                    <p><i class="fas fa-phone"></i> +91-01812621711</p>
+                    <p><i class="fas fa-envelope"></i> info@drssweets.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Business Hours</h3>
+                    <p>Monday - Sunday</p>
+                    <p>9:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dev Raj Sohal Sweets & Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919815555711" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRS Sweets - Style Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            padding: 2rem;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #8B0000;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        .subtitle {
+            color: #D4AF37;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .section {
+            margin: 2rem 0;
+        }
+        .section h2 {
+            color: #333;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #D4AF37;
+        }
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .color-box {
+            padding: 2rem;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+        }
+        .color-box h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        .color-box p {
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+        .primary { background: #8B0000; }
+        .accent { background: #D4AF37; color: #333; }
+        .white { background: #FFFFFF; color: #333; border: 2px solid #e5e5e5; }
+        .dark { background: #333333; }
+        .font-examples {
+            margin-top: 1rem;
+        }
+        .font-box {
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+        }
+        .playfair {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #8B0000;
+        }
+        .inter {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            color: #666;
+        }
+        .component {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.9rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            margin: 0.5rem;
+            text-decoration: none;
+        }
+        .btn-primary {
+            background: #D4AF37;
+            color: #333;
+        }
+        .btn-secondary {
+            background: #8B0000;
+            color: white;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .stat-box {
+            text-align: center;
+            padding: 1.5rem;
+            background: #8B0000;
+            color: white;
+            border-radius: 8px;
+        }
+        .stat-box h3 {
+            font-size: 2.5rem;
+            color: #D4AF37;
+            margin-bottom: 0.5rem;
+        }
+        .stat-box p {
+            font-size: 0.9rem;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍰 DRS Sweets Style Guide</h1>
+        <p class="subtitle">Design System & Brand Guidelines</p>
+
+        <!-- Colors -->
+        <div class="section">
+            <h2>Color Palette</h2>
+            <div class="color-grid">
+                <div class="color-box primary">
+                    <h3>Primary Maroon</h3>
+                    <p>#8B0000</p>
+                    <p>Headings, Accent</p>
+                </div>
+                <div class="color-box accent">
+                    <h3>Accent Gold</h3>
+                    <p>#D4AF37</p>
+                    <p>Highlights, CTAs</p>
+                </div>
+                <div class="color-box white">
+                    <h3>Background White</h3>
+                    <p>#FFFFFF</p>
+                    <p>Main Background</p>
+                </div>
+                <div class="color-box dark">
+                    <h3>Text Dark</h3>
+                    <p>#333333</p>
+                    <p>Body Text</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Typography -->
+        <div class="section">
+            <h2>Typography</h2>
+            <div class="font-examples">
+                <div class="font-box">
+                    <p style="font-size: 0.8rem; color: #999; margin-bottom: 0.5rem;">HEADINGS</p>
+                    <p class="playfair">Playfair Display</p>
+                    <p style="margin-top: 0.5rem; color: #666;">Used for: H1, H2, H3 - Elegant & Traditional</p>
+                </div>
+                <div class="font-box">
+                    <p style="font-size: 0.8rem; color: #999; margin-bottom: 0.5rem;">BODY TEXT</p>
+                    <p class="inter">Inter - Clean, modern sans-serif for excellent readability</p>
+                    <p style="margin-top: 0.5rem; color: #666;">Used for: Body text, descriptions, labels</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Components -->
+        <div class="section">
+            <h2>Button Styles</h2>
+            <div class="component">
+                <a href="#" class="btn btn-primary">Primary Button (Gold)</a>
+                <a href="#" class="btn btn-secondary">Secondary Button (Maroon)</a>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="section">
+            <h2>Website Statistics</h2>
+            <div class="stats">
+                <div class="stat-box">
+                    <h3>4</h3>
+                    <p>Pages</p>
+                </div>
+                <div class="stat-box">
+                    <h3>20+</h3>
+                    <p>Menu Items</p>
+                </div>
+                <div class="stat-box">
+                    <h3>100%</h3>
+                    <p>Mobile Responsive</p>
+                </div>
+                <div class="stat-box">
+                    <h3>1985</h3>
+                    <p>Established</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Design Principles -->
+        <div class="section">
+            <h2>Design Principles</h2>
+            <ul style="line-height: 2; color: #666;">
+                <li>✅ <strong>Clean & Minimal</strong> - White backgrounds, NO colored boxes</li>
+                <li>✅ <strong>Image-First</strong> - Beautiful food photography takes center stage</li>
+                <li>✅ <strong>Professional</strong> - Magazine-style layout, elegant typography</li>
+                <li>✅ <strong>Traditional Colors</strong> - Maroon & Gold reflect heritage</li>
+                <li>✅ <strong>Mobile-Friendly</strong> - Fully responsive across all devices</li>
+                <li>✅ <strong>Fast Loading</strong> - Optimized for performance</li>
+                <li>✅ <strong>User-Friendly</strong> - Simple navigation, clear CTAs</li>
+            </ul>
+        </div>
+
+        <!-- Features -->
+        <div class="section">
+            <h2>Key Features</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+                <div style="padding: 1rem; background: #f9f9f9; border-radius: 8px;">
+                    <h4 style="color: #8B0000; margin-bottom: 0.5rem;">📱 WhatsApp Integration</h4>
+                    <p style="color: #666; font-size: 0.9rem;">Floating button + contact form sends to WhatsApp</p>
+                </div>
+                <div style="padding: 1rem; background: #f9f9f9; border-radius: 8px;">
+                    <h4 style="color: #8B0000; margin-bottom: 0.5rem;">🎨 Smooth Animations</h4>
+                    <p style="color: #666; font-size: 0.9rem;">Fade-in effects, hover states, smooth scrolling</p>
+                </div>
+                <div style="padding: 1rem; background: #f9f9f9; border-radius: 8px;">
+                    <h4 style="color: #8B0000; margin-bottom: 0.5rem;">🍽️ Menu Filtering</h4>
+                    <p style="color: #666; font-size: 0.9rem;">Filter by Sweets, Veg, Non-Veg, Snacks</p>
+                </div>
+                <div style="padding: 1rem; background: #f9f9f9; border-radius: 8px;">
+                    <h4 style="color: #8B0000; margin-bottom: 0.5rem;">📍 Location Map</h4>
+                    <p style="color: #666; font-size: 0.9rem;">Google Maps integration for easy finding</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, #8B0000 0%, #5a0000 100%); color: white; border-radius: 8px; text-align: center;">
+            <h2 style="color: #D4AF37; margin-bottom: 1rem;">Ready to Launch! 🚀</h2>
+            <p style="font-size: 1.1rem;">All files created • Production ready • Vercel optimized</p>
+        </div>
+    </div>
+</body>
+</html>

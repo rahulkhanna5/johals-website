@@ -1,0 +1,19 @@
+{
+  "name": "drs-sweets-restaurant",
+  "version": "1.0.0",
+  "description": "Website for Dev Raj Sohal Sweets & Restaurant - Authentic Indian sweets and cuisine since 1985",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'No build step required - static HTML'",
+    "preview": "npx serve ."
+  },
+  "keywords": [
+    "restaurant",
+    "indian-food",
+    "sweets",
+    "jalandhar",
+    "punjab"
+  ],
+  "author": "DRS Sweets",
+  "license": "ISC"
+}
